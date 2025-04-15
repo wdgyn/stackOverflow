@@ -1,0 +1,53 @@
+// //12April2025 - 4.08pm
+// import React, { useState } from "react";
+// import { Box, Typography, Grid, Button } from "@mui/material";
+// import QuestionCard from "../components/QuestionCard";
+// import LeftSidebar from "../components/LeftSidebar";
+// import RightSidebar from "../components/RightSidebar";
+// import TopNavBar from "../components/TopNavBar";
+// import QuestionFilterDropdown from "../components/QuestionFilter";
+// import Api from "../../services/Api";
+
+// function ForumPage() {
+
+//   const [question, setQuestion] = useState(null);
+//   const [filter, setFilter] = useState("hot");
+
+//   useEffect(() => {
+//         Api.getAllQuestions()
+//             .then((res) => res.json())
+//             .then((questions) => {
+              
+//             });
+//     }, []);
+
+//   return (
+//     <Box sx={{ width: '100%', height: '100%', m: 0, p: 0, boxSizing: 'border-box' }}>
+//       <TopNavBar />
+
+//       <Box sx={{ maxWidth: '100%', px: 6, mt: 3 }}>
+//         <Grid container spacing={3} justifyContent="center">
+//           <Grid item xs={12} md={2}>
+//             <LeftSidebar />
+//           </Grid>
+
+//           <Grid item xs={12} md={8}>
+//               <QuestionFilterDropdown filter={filter} setFilter={setFilter} />
+//             <Typography variant="h5" gutterBottom>
+//               Recently Active Questions
+//             </Typography>
+//             {[1, 2, 3].map((q, i) => (
+//               <QuestionCard key={i} />
+//             ))}
+//           </Grid>
+
+//           <Grid item xs={12} md={2}>
+//             <RightSidebar />
+//           </Grid>
+//         </Grid>
+//       </Box>
+//     </Box>
+//   );
+// }
+
+// export default ForumPage;
